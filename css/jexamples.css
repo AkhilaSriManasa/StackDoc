@@ -1,0 +1,44 @@
+.cblk, .cln, .code, .jc, .jdh, .jdk, .kw, .ln, .numc, .prn, .str, .type {
+	             font-family : Courier New, Courier, sans-serif;
+	             font-size   : 10pt;
+	             font-weight : normal;
+	             font-style  : normal;}
+
+/*div.code       { white-space: pre; }*/
+.bg            { }                    /* blank characters */
+.cblk          { color: #3f7f5f; }    /* comment block */
+.cln           { color: #339966; }    /* single line comment */
+.code          { color: #000000; }    /* general source code */
+.jc            { color: #0033ff; }    /* javadoc comment */
+.jdh           { color: #7f9fbf; }    /* html tags in javadoc comments */
+.jdk           { color: #7f9fbf; }    /* javadoc @param names */
+.kw            { color: #990033;
+	         font-weight : 600; } /* java keyword */
+.ln            { color: #808080;
+                 background-color: #eef5fe;} /* line number F1F1FD */
+.ln_hit        { color: red;
+                 font-family : Courier New, Courier, sans-serif;
+                 font-size: 10.5pt;
+                 font-weight: 600;}   /* "hit" line number */
+.numc          { color: #990000; }    /* numeric constant */
+.prn           { color: #000000; }    /* parenthesis */
+.str           { color: #3300ff; }    /* string constant */
+.type          { color: #990066;
+                 font-weight : 550;}  /* datatype name */
+.rateLnk       { /*margin-left: 5em;*/   /* Rate link at end of hit lines */
+                 margin-right: 10px;
+                 -moz-border-radius: 5px;
+                 background-color: #69c;
+                 color: #fff;
+                 font-size: 12pt;
+                 width: 2.5em;
+                 padding: 0 4px 0 4px;
+                 float: right;
+               }
+
+.rateLnk a:link, .rateLnk a:visited { text-decoration: none; color: #fff;}
+.rateLnk a:hover {
+                text-decoration: underline;
+                color: #000;
+               }
+

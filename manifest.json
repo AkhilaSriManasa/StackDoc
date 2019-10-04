@@ -1,0 +1,16 @@
+{
+	"manifest_version":2,
+	"name": "StackDoc",
+	"description": "This plugin display meanings of API calls in Stack Overflow.",
+	"version": "1.0",
+
+	"permissions": ["http://*/*", "https://*/*"],
+
+	"content_scripts": [{
+		"matches" : ["https://stackoverflow.com/questions/*"],
+		"css": ["css/jquery.simple-popup.min.css", "css/jexamples.css"],
+		"js": ["js/jquery-3.3.1.min.js", "js/jquery.simple-popup.min.js", 
+			"js/member-search-index.js", "js/api-search-index-stripped.js", "js/api-search-index-order.js",
+			 "js/class-search-index.js", "js/binarySearch.js", "getAPIDoc.js"]
+	}]
+}
